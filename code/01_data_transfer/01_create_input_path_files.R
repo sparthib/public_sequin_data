@@ -47,16 +47,20 @@ bigwigs <- data |> filter(!is.na(`Spike in concentration`)) |> select(bigwig_pat
 
 
 #save fastqs as a text file
-write.table(fastqs, file = here("raw_data", "fastqs.txt"), sep = "\t", row.names = FALSE)
+write.table(fastqs, file = here("raw_data", "fastqs.txt"), sep = "\t", 
+            row.names = FALSE, quote = FALSE)
 
 #save genome_bams as a text file
-write.table(genome_bams, file = here("raw_data", "genome_bams.txt"), sep = "\t", row.names = FALSE)
+write.table(genome_bams, file = here("raw_data", "genome_bams.txt"), sep = "\t",
+            row.names = FALSE, quote = FALSE)
 
 #save transcriptome_bams as a text file
-write.table(transcriptome_bams, file = here("raw_data", "transcriptome_bams.txt"), sep = "\t", row.names = FALSE)
+write.table(transcriptome_bams, file = here("raw_data", "transcriptome_bams.txt"), 
+            sep = "\t", row.names = FALSE, quote = FALSE)
 
 #save bigwigs as a text file
-write.table(bigwigs, file = here("raw_data", "bigwigs.txt"), sep = "\t", row.names = FALSE)
+write.table(bigwigs, file = here("raw_data", "bigwigs.txt"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
 
 
 
