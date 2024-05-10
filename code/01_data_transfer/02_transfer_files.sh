@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #SBATCH -p shared
-#SBATCH --mem=20G
 #SBATCH --job-name=transfer_files 
 #SBATCH --mail-user=sparthi1@jhu.edu
 #SBATCH --mail-type=ALL
